@@ -1,0 +1,24 @@
+{
+  "name": "zero-mq-learning",
+  "version": "1.0.0",
+  "description": "Zero-MQ Learning",
+  "scripts": {
+    "prestart": "",
+    "start": "",
+    "open:src": "",
+    "lint": "node_modules/.bin/esw webpack.config.* src tools",
+    "lint:watch": "npm run lint -- --watch",
+    "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "Chris Ballance",
+  "license": "MIT",
+  "dependencies": {
+    "zmq": "4.1.4"
+  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ballance/zero-mq-learning/"
+  }
+}
